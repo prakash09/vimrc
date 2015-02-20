@@ -9,6 +9,12 @@
 
 **Plugins manager:**Pathogen
 
+####Few Productivity settings####
+* Escape and Capslock both keys are swapped
+* Your undo file will be saved in ~/Documents/undo folder. So you can go back
+  upto 700 steps even after exiting from vim.
+* Relative line numbering in normal mode and absolute in inset mode.
+
 ####Few Keyboard shorcuts####
 * **F2** - For paste toggle
 * **Ctrl+j/k/l/h**- For swichting quickly between splits

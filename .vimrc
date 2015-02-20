@@ -111,15 +111,18 @@ if exists("+undofile")
 endif
 
 
+autocmd InsertEnter * :set invrelativenumber | :set number
+autocmd InsertLeave * :set relativenumber
 
 " :map <F9> :!sh run.sh %
 
 syntax on
 " colorscheme black_angus
+" colorscheme vividchalk
 colorscheme vividchalk
 
 filetype plugin indent on
-" map! ii <Esc> " map ii to Esc
+map! jj <Esc> " map jj to Esc
 
 set showcmd showmode fdm=indent noerrorbells
 set nofoldenable "folds open by default
@@ -142,4 +145,6 @@ au Filetype python source ~/.vim/scripts/python.vim
 set splitbelow
 
 
-
+:silent !~/.vim/esc_capslock_swap.sh off
+au VimLeave * call system('~/.vim/esc_capslock_swap.sh on') 
+" au VimLeave * call system('') 
