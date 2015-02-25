@@ -26,14 +26,14 @@
 " There are some customization on the result string based on existing variables 
 " like:
 "
-" let g:git_branch_status_head_current=1
+let g:git_branch_status_head_current=1
 " This will show just the current head branch name 
 " 
-" let g:git_branch_status_text="text"
+let g:git_branch_status_text=" Git:"
 " This will show 'text' before the branches. If not set ' Git ' (with a trailing
 " left space) will be displayed.
 "
-" let g:git_branch_status_nogit=""
+let g:git_branch_status_nogit=""
 " The message when there is no Git repository on the current dir
 "
 " let g:git_branch_status_around=""
@@ -41,11 +41,11 @@
 " the first will be on the beginning of the branch string and the last on the
 " end.
 " 
-" let g:git_branch_status_ignore_remotes=1
+let g:git_branch_status_ignore_remotes=1
 " Ignore the remote branches. If you don't want information about them, this can
 " make things works faster.
 "
-" let g:git_branch_check_write=<something>
+let g:git_branch_check_write=<something>
 " Check the current branch if it's the same branch where the file was loaded, 
 " before saving the file.
 "
