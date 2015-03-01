@@ -60,7 +60,7 @@ let mapleader = ","
 
 
 " Showing line numbers and length
- set number  " show line numbers
+ set relativenumber  " show line numbers
  set tw=79   " width of document (used by gd)
  set nowrap  " don't automatically wrap on load
  set fo-=t   " don't automatically wrap text when typing
@@ -132,7 +132,7 @@ nnoremap <Space> za  " for toggling folds in vim
 execute pathogen#infect()
 
 " showing function arguments 
-let g:jedi#show_call_signatures = "1"
+let g:jedi#show_call_signatures = "2"
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 set guifont=Monospace\ 12
@@ -144,7 +144,12 @@ au Filetype python source ~/.vim/scripts/python.vim
 " for opening jedi-vim's docstring window at the bottom of the screen
 set splitbelow
 
-
+" for swapping capslock and esc
 :silent !~/.vim/esc_capslock_swap.sh off
 au VimLeave * call system('~/.vim/esc_capslock_swap.sh on') 
 " au VimLeave * call system('') 
+
+" ctrl +a for copying whole file to clipboard
+nmap <C-a> gg"+yG
+" ctrl +c for copying the highlighted text to clipboard
+vmap <C-c> "+y
