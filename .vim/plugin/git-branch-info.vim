@@ -45,7 +45,7 @@ let g:git_branch_status_ignore_remotes=1
 " Ignore the remote branches. If you don't want information about them, this can
 " make things works faster.
 "
-let g:git_branch_check_write=<something>
+" let g:git_branch_check_write=<something>
 " Check the current branch if it's the same branch where the file was loaded, 
 " before saving the file.
 "

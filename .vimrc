@@ -11,6 +11,7 @@ filetype on
 " paste. At the bottom you should see ``-- INSERT (paste) --``.
 
 set pastetoggle=<F2>
+map <F5> :source $MYVIMRC
 set clipboard=unnamedplus
 
 
@@ -122,7 +123,7 @@ syntax on
 colorscheme vividchalk
 
 filetype plugin indent on
-map! jj <Esc> " map jj to Esc
+" map! jj <Esc> " map jj to Esc
 
 set showcmd showmode fdm=indent noerrorbells
 set nofoldenable "folds open by default
@@ -153,3 +154,6 @@ au VimLeave * call system('~/.vim/esc_capslock_swap.sh on')
 nmap <C-a> gg"+yG
 " ctrl +c for copying the highlighted text to clipboard
 vmap <C-c> "+y
+
+
+set wildignore=*.o,*~,*.pyc
