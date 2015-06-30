@@ -1,7 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/prakash/python/codechef'
-let g:netrw_dirhist_2='/home/prakash/cpp/competitive_programming_3_code'
-let g:netrw_dirhist_3='/home/prakash/gsoc2015/sympy/sympy/solvers/tests'
-let g:netrw_dirhist_4='/home/prakash/.vim/plugin'
-let g:netrw_dirhist_5='/home/prakash/housejive/zimply_rest_apis/commerce/migrations'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/prakash/housejive/housejive'
+let g:netrw_dirhist_2='/home/prakash/housejive/housejive/templates'
+let g:netrw_dirhist_3='/home/prakash/housejive/housejive/templates/blog'

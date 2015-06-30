@@ -12,6 +12,7 @@ filetype on
 
 set pastetoggle=<F2>
 map <F5> :source $MYVIMRC
+map <F4> :%!python -m json.tool
 set clipboard=unnamedplus
 
 
@@ -157,3 +158,15 @@ vmap <C-c> "+y
 
 
 set wildignore=*.o,*~,*.pyc
+
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+
+" javascript syntax checker
+let g:syntastic_javascript_checkers = ['jshint']
+
+" indent guides
