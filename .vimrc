@@ -126,7 +126,7 @@ colorscheme vividchalk
 filetype plugin indent on
 " map! jj <Esc> " map jj to Esc
 
-set showcmd showmode fdm=indent noerrorbells
+set showcmd showmode  fdm=indent noerrorbells
 set nofoldenable "folds open by default
 nnoremap <Space> za  " for toggling folds in vim
 
@@ -137,7 +137,7 @@ execute pathogen#infect()
 let g:jedi#show_call_signatures = "2"
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
-set guifont=Monospace\ 12
+set guifont=Monospace\ 13
 
 au Filetype cpp source ~/.vim/scripts/cpp.vim
 au Filetype java source ~/.vim/scripts/cpp.vim
@@ -170,3 +170,9 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['jshint']
 
 " indent guides
+"
+"
+
+"Sourced from vim tip: http://vim.wikia.com/wiki/Keep_folds_closed_while_inserting_text
+" autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | setlocal foldmethod=manual | endif
+" autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
